@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+  
+  
+:root {
+    --color-bg: #000;
+    --color-primary: #1FF19F;
+    --color-white: #fff;
+    --transition: all 400ms ease;
+  
+    --container-width-lg: 90%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+  
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+  
+/* =================== GENERAL STYLES START =================== */
+  
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+  
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+  
+h1{
+    font-size: 2.5rem;
+    color: var(--color-white);
+    margin-top: 10px;
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+  
+.btn-01:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-02:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+  
+.btn-01{
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    margin-right: 15px;
+}
+
+.btn-02{
+    color: var(--color-primary);
+}
+.btn-03{
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+.btn-03:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+/* =================== GENERAL STYLES END =================== */
+
+
+/* ====================== Header area start ====================== */
+.header-area{
+    position: relative;
+    background-color: var(--color-bg);
+    width: 100%;
+    height: 94px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header a img{
+    width: 205px;
+    height: 73px;
+}
+
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    right: 5%;
+    display: none;
+    
+}
+.navmenu a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+}
+/* =============================== Header area end ============================ */
+
+/*    ================================== Banner area start =============================== */
+.banner-area{
+    background-image: url(../images/banner-home.png);
+    background-size: cover;
+    background-position: 79%;
+    margin-top: -10px;
+    height: 800px;
+    max-width: 100%;
+}
+
+.banner{
+    padding-top: 12rem;
+}
+
+.banner p{
+    color: #708DA2;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+/* .lines{
+    position: absolute;
+}
+
+.lines h3::before{
+    content: '';
+    height: 2px;
+    position: relative;
+    background: #1FF19F; 
+    width: 45px;
+    top: 40px;
+} */
+
+.lines h3{
+    margin-left: 40px;
+    color: var(--color-primary);
+}
+
+
+/* =============================== Banner area end ================================ */
+/* =============================== About US area Start ================================ */
+
+.about-us-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 80px 0;
+}
+
+/* =============================== About US area end ================================ */
+
+/* =================== AI Solutions for Businesses area start ===================== */
+.ai-solutions-for-businesses-area{
+    background-image: url(../images/ai-solutions-for-businesses/ai-solutions-for-businesses.png);
+    background-size: cover;
+    background-position: 79%;
+    max-width: 100%;
+}
+.ai-solutions-for-businesses{
+    padding: 80px 0;
+}
+.ai-solutions-for-businesses-text{
+    text-align: center;
+}
+.ai-solutions-for-businesses-text h4{
+    color: var(--color-primary);
+}
+.ai-solutions-for-businesses-text h3{
+    color: var(--color-white);
+}
+
+.ai-solutions-for-businesses-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px 0 40px 0;
+}
+.ai-solutions-for-businesses-columns{
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 5px;
+}
+.ai-solutions-for-businesses-columns h2{
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+.ai-solutions-for-businesses-columns p{
+    margin: 10px 0;
+    color: #545454;
+}
+.ai-solutions-for-businesses-columns span{
+    color: var(--color-primary);
+    font-size: 15px;
+}
+/* ================= AI Solutions for Businesses area end ===================== */
+
+/* ================== Elevate Your Business area start ======================= */
+
+.elevate-your-business-area{
+    background: linear-gradient(110deg, rgba(31,241,159,1) 59%, rgba(9,151,224,1) 100%);
+    padding: 80px 0;
+}
+.elevate-your-business{
+    text-align: center;
+}
+.elevate-your-business h3{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.elevate-your-business h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.elevate-your-business p{
+    color: #545454;
+    margin-bottom: 15px;
+}
+/* ================== Elevate Your Business area end ========================= */
+
+/* =============================== Footer area start ================================ */
+
+.footer-area-top{
+    background-color: var(--color-bg);
+    padding: 80px 0;
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.footer-col-1 img{
+    width: 279px;
+    height: 79px;
+    margin-left: 90px;
+}
+.footer-col-1 p{
+    color: #777777;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+.footer-col-2 h4{
+    color: var(--color-white);
+}
+.footer-col-2 ul li{
+    margin-top: 20px;
+    border-bottom: 1px solid #4A4A4A;
+    padding-bottom: 5px;
+}
+.footer-col-2 ul li a{
+    color: #777777;
+}
+
+.footer-col-3 h4{
+    color: var(--color-white);
+}
+.footer-col-3 p{
+    color: #777777;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+.footer-col-3 form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.footer-buttom{
+    background-color: #1C1C1C;
+    padding: 20px 0;
+}
+.footer-buttom h5{
+    color: var(--color-white);
+}
+.footer-buttom h5 a{
+    color: var(--color-primary);
+}
+/* =============================== Footer area end ================================ */
+
+/* ==================== MEDIA QUERIES (MEDIES DEVICES) ====================*/
+  
+@media screen and (max-width: 1060px) {
+    .container{
+      width: var(--container-width-md);
+    }
+    h1{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    .btn{
+        padding: 0.65rem 1.5rem;
+    }
+  
+   /* ====================== Header area start ====================== */
+   .header a img{
+        width: 185px;
+        height: 63px;
+    }
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #mobile-menu-icon{
+        display: none;
+    }
+
+    .icons #mobile-close-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #mobile-close-icon{
+        display: block;
+    }
+
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navmenu{
+        height: 22rem;
+    }
+
+    .navmenu a{
+        display: block;
+        margin: 1.3rem 2rem;
+        font-size: 1.5rem;
+        transform: translateY(-50px);
+    }
+
+    #check:checked~.navmenu a{
+        transform: translateY(0);
+    }
+
+    /* =============================== Header area end ============================ */
+
+    /* ================================== Banner area start =============================== */
+    .banner-area{
+        height: 650px;
+        max-width: 100%;
+    }
+    .banner{
+        padding-top: 8rem;
+    }
+    .banner p{
+        margin: 15px 0 25px 0;
+        font-size: 12px;
+    }
+    
+    /* ================================== Banner area end =============================== */
+
+    /* ================= AI Solutions for Businesses area start ===================== */
+    .ai-solutions-for-businesses-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ================= AI Solutions for Businesses area end ===================== */
+
+    /* ================================== Footer area start =============================== */
+    .footer-top{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ================================== footer area end =============================== */
+}
+
+
+
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ====================*/
+  
+@media screen and (max-width: 768px) {
+    .container{
+      width: var(--container-width-sm);
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    
+    .btn{
+        padding: 0.55rem 1.2rem;
+    }
+
+    /* ================================== Banner area start =============================== */
+    .banner-area{
+        height: 450px;
+        max-width: 100%;
+    }
+    .banner{
+        padding-top: 6rem;
+    }
+    .banner p{
+        margin: 15px 0 25px 0;
+        font-size: 10px;
+    }
+    /* ================================== Banner area end =============================== */
+
+    /* ================================== Footer area start =============================== */
+    .footer-top{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* ================================== footer area end =============================== */
+
+    
+}
+
+@media screen and (max-width: 668px) {
+    .container{
+      width: var(--container-width-sm);
+    }
+    h1{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    
+    .btn{
+        padding: 0.45rem 1rem;
+    }
+    .header-area{
+        height: 70px;
+    }
+
+    .header a img{
+        width: 180px;
+        height: 53px;
+    }
+
+    /* ================================== Banner area start =============================== */
+    .banner-area{
+        height: 400px;
+        max-width: 100%;
+    }
+    .banner{
+        padding-top: 5rem;
+    }
+    .banner p{
+        margin: 15px 0 25px 0;
+        font-size: 9px;
+    }
+
+    /* ================================== Banner area end =============================== */
+
+    /* ================= AI Solutions for Businesses area start ===================== */
+    .ai-solutions-for-businesses-col{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* ================= AI Solutions for Businesses area end ===================== */
+
+  
+    
+
+    
+}
