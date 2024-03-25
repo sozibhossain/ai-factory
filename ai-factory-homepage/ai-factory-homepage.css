@@ -178,6 +178,47 @@ h1{
     padding: 80px 0;
 }
 
+.about-us-img-area{
+    position: relative;
+}
+.about-us-img-area img{
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.about-us-img-area .about_us-3{
+    width: 188px;
+    height: 160px;
+    margin-top: 200px;
+}
+.about-us-img-area .about_us-2{
+    width: 351px;
+    height: 254px;
+    position: relative;
+    margin-top: -350px;
+    margin-left: 80px;
+}
+.about-us-img-area .about_us-1{
+    width: 374px;
+    height: 351px;
+    position: relative;
+    margin-left: 210px;
+    margin-top: -150px;
+}
+.about-us-img-area .about_us-4{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin-left: 160px;
+    margin-top: -135px;
+}
+
 /* =============================== About US area end ================================ */
 
 /* =================== AI Solutions for Businesses area start ===================== */
@@ -437,6 +478,10 @@ h1{
         font-size: 10px;
     }
     /* ================================== Banner area end =============================== */
+
+    .about-us-area{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     /* ================================== Footer area start =============================== */
     .footer-top{
